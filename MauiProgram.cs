@@ -9,9 +9,9 @@ public static class MauiProgram
 			.UseMauiApp<App>()
 			.ConfigureMauiHandlers(handlers =>
 			{
-#if WINDOWS
+//#if WINDOWS
                 handlers.AddHandler(typeof(MyEntry), typeof(MyEntryHandler));
-#endif
+//#endif
 			})
 			.ConfigureFonts(fonts =>
 			{

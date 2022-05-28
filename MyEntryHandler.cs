@@ -102,6 +102,7 @@ namespace MauiCustomEntryHandler
         //    throw new NotImplementedException();
         //}
     }
+    // ========== MAY NEED BELOW FOR PLATFORMS NOT YET IMPLEMENTED ==========
 #else
     public partial class MyEntryHandler : EntryHandler
     {

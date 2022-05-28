@@ -1,4 +1,5 @@
-﻿#if WINDOWS
+﻿// TBD: Not supposed to need "#if" in Windows folder, but w/o this get compile errors. Those go away if add dummy implementation on ALL platforms mentioned in .csproj.
+#if WINDOWS
 //using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using Microsoft.UI.Xaml;
@@ -21,7 +22,7 @@ using Thickness = Microsoft.UI.Xaml.Thickness;
 namespace MauiCustomEntryHandler
 {
     /// <summary>
-    /// Windows platform partial of class. See Maui repo maui\src\Core\src\Handlers\Entry\EntryHandler.Windows.cs
+    /// Windows platform partial of class. Based on Maui src\Core\src\Handlers\Entry\EntryHandler.Windows.cs
     /// "TPlatformView" is "Microsoft.UI.Xaml.FrameworkElement". WAS "Microsoft.UI.Xaml.Controls.TextBox".
     /// </summary>
     public partial class MyEntryHandler : Microsoft.Maui.Handlers.ViewHandler<IEntry, PlatformView>   //EntryHandler

@@ -10,7 +10,8 @@
                 Spacing="25" Padding="30,0" BackgroundColor="LightBlue"
                 HorizontalOptions="Center" VerticalOptions="Center">
             <Label Text="Hello, Maui!" FontSize="24" HorizontalOptions="Center" />
-            <myviews:MyEntry x:Name="entry" Text="test" FontSize="20" UnderlineThickness="8" UnderlineColor="Purple" />
+            <myviews:MyEntry Text="test" FontSize="20" UnderlineThickness="8" UnderlineColor="Purple" BackgroundColor="LightGray" />
+            <myviews:MyEntry UnderlineThickness="0" BackgroundColor="LightGray" />
         </VerticalStackLayout>
     </ScrollView>
  
