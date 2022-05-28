@@ -3,7 +3,7 @@ namespace MauiCustomEntryHandler;
 public class MyEntry : Entry
 {
     /// <summary>
-    /// Thickness of bottom border.
+    /// Color of bottom border.
     /// </summary>
     public static BindableProperty UnderlineColorProperty = BindableProperty.Create(
             nameof(UnderlineColor), typeof(Color), typeof(MyEntry), Colors.Black);
@@ -13,6 +13,9 @@ public class MyEntry : Entry
         set => SetValue(UnderlineColorProperty, value);
     }
 
+    /// <summary>
+    /// Thickness of bottom border.
+    /// </summary>
     public static BindableProperty UnderlineThicknessProperty = BindableProperty.Create(
             nameof(UnderlineThickness), typeof(int), typeof(MyEntry), 0);
     public int UnderlineThickness
